@@ -6,6 +6,9 @@ const cors = require("cors");
 const bodyParser = require('body-parser');
 const app = express();
 
+const allowedOrigins = [
+  "http://localhost:5173",         
+];
 
 app.use(cors());
 app.use(express.json());
